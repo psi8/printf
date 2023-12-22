@@ -26,20 +26,40 @@ int	print_digit(long n, int base)
 	int		count;
 	char	*symbols;
 
-	symbols = "0123456789abcdef";
 	if (n < 0)
 	{
 		write(1, "-", 1);
-		return (print_digit(-n, base) + 1);
+		return (print_digit(-n, 10) + 1);
 	}
 	else if (n < base)
 		return (print_char(symbols[n]));
 	else 
 	{
-		count = print_digit(n / base, base);
-		return (count + print_digit(n % base, base));
+		count = print_digit(n / 10, 10);
+		return (count + print_digit(n % 10, 10));
 	}
 }
+
+int	print_hex(long n, int base)
+{
+	int		count;
+	char	*symbols;
+
+	symbols = "0123456789abcdef";
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		return (print_digit(-n, 16) + 1);
+	}
+	else if (n < base)
+		return (print_char(symbols[n]));
+	else 
+	{
+		count = print_digit(n / 16, 16);
+		return (count + print_digit(n % 16, 16));
+	}
+}
+
 int	print_format(char specifier, va_list ap)
 {
 	int	count;
@@ -78,9 +98,18 @@ int	ft_printf(const char *format, ...)
 }
 int	main()
 {
-	int count;
-	count = ft_printf("hello %s\n", "John");
-	ft_printf("The chars written are %d\n", count);
-	count = ft_printf("%x\n", 42);
-	ft_printf("The chars written are %d\n", count);
+	// int count;
+	// int count1;
+	
+	ft_printf("Hello %s, today is %d, in hex %x, char ->%c\n",
+	"Paul",
+	27,
+	27,
+	'z');
+	// count = ft_printf("hello %s\n", "John");
+	// ft_printf("The chars written are %d\n", count);
+	// count = ft_printf("%d\n", INT32_MIN);
+	// ft_printf("The chars written are %d\n", count);
+	// count1 = printf("%d\n", INT32_MIN);
+	// printf("The chars written are %d\n", count);
 }

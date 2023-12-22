@@ -7,6 +7,7 @@ SOURCES = ft_printf.c \
 						print_str.c \
 						print_dec.c \
 						print_hex.c \
+						print_ptr.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 

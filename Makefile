@@ -2,12 +2,12 @@ CC = CC
 CFLAGS = -Wall -Wextra -Werror
 
 SOURCES = ft_printf.c \
-						print_format.c \
-						print_char.c \
-						print_str.c \
-						print_dec.c \
-						print_hex.c \
-						print_ptr.c \
+			print_format.c \
+			print_char.c \
+			print_str.c \
+			print_dec.c \
+			print_hex.c \
+			print_ptr.c \
 
 OBJECTS = $(SOURCES:.c=.o)
 

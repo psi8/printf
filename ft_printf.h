@@ -6,7 +6,7 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 18:09:16 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/22 22:40:17 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/22 23:35:52 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ void	print_char(int c, p_list *ret);
 void	print_str(char *str, p_list *ret);
 void	print_dec(long nbr, p_list *ret);
 void	print_hex(long nbr, int upper_case, p_list *ret);
-void	print_prt(unsigned long nbr, p_list *ret);
+void	print_ptr(unsigned long nbr, p_list *ret);
 
 #endif

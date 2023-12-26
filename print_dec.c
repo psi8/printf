@@ -6,7 +6,7 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 21:08:05 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/26 21:48:57 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/27 00:20:06 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	print_dec(long nbr, p_list *ret)
 		print_dec(nbr / 10, ret);
 		nbr = nbr % 10;
 	}
-	print_char(nbr + "0", ret);
+	print_char(nbr + '0', ret);
 }

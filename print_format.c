@@ -6,20 +6,20 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 18:33:40 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/22 22:33:55 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/27 17:41:57 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	print_format(char specifier, va_list ap, p_list *ret)
+void	print_format(char specifier, va_list ap, t_list *ret)
 {
 	if (specifier == 'c')
 		print_char(va_arg(ap, int), ret);
 	else if (specifier == 's')
 		print_str(va_arg(ap, char *), ret);
 	else if (specifier == 'd' || specifier == 'i')
-		print_dec((long)(va_arg(ap, unsigned int)), ret);
+		print_dec((long)(va_arg(ap, int)), ret);
 	else if (specifier == 'u')
 		print_dec((long)(va_arg(ap, unsigned int)), ret);
 	else if (specifier == 'x')

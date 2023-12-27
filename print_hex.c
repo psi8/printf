@@ -6,13 +6,13 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 21:44:03 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/22 21:54:42 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/27 18:27:29 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	print_hex(long nbr, int upper_case, p_list *ret)
+void	print_hex(long nbr, int upper_case, t_list *ret)
 {
 	char	*lower;
 	char	*upper;

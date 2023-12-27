@@ -6,13 +6,13 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 21:08:05 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/27 00:20:06 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/27 17:41:50 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	print_dec(long nbr, p_list *ret)
+void	print_dec(long nbr, t_list *ret)
 {
 	if (nbr < 0)
 	{

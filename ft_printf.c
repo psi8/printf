@@ -6,7 +6,7 @@
 /*   By: psitkin <psitkin@hive.student.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 19:06:22 by psitkin           #+#    #+#             */
-/*   Updated: 2023/12/18 21:09:00 by psitkin          ###   ########.fr       */
+/*   Updated: 2023/12/27 18:27:24 by psitkin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_printf(const char *format, ...)
 {
 	va_list		ap;
-	p_list		ret;
+	t_list		ret;
 	int			i;
 
 	ret.length = 0;
